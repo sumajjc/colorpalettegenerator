@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Palette Generator</h1>
+    <p>Select up to 3 options for each question to generate your color palette:</p>
+
+    <div class="quiz">
+      <!-- Question 1 -->
+      <div class="question active" id="question-1">
+        <h2>What color styles best represent your brand?</h2>
+        <div class="button-grid">
+          <button class="option-button" data-group="color-style" value="neutrals">Neutrals</button>
+          <button class="option-button" data-group="color-style" value="earthy">Earthy</button>
+          <button class="option-button" data-group="color-style" value="shades">Shades</button>
+          <button class="option-button" data-group="color-style" value="pastels">Pastels</button>
+          <button class="option-button" data-group="color-style" value="vibrant">Vibrant</button>
+          <button class="option-button" data-group="color-style" value="monochrome">Monochrome</button>
+          <button class="option-button" data-group="color-style" value="bold">Bold</button>
+          <button class="option-button" data-group="color-style" value="bright">Bright</button>
+          <button class="option-button" data-group="color-style" value="minimalist">Minimalist</button>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="question-2">
+        <h2>What feelings should your brand evoke?</h2>
+        <div class="button-grid">
+          <button class="option-button" data-group="emotion" value="calm">Calm</button>
+          <button class="option-button" data-group="emotion" value="bold">Bold</button>
+          <button class="option-button" data-group="emotion" value="vibrant">Vibrant</button>
+          <button class="option-button" data-group="emotion" value="trustworthy">Trustworthy</button>
+          <button class="option-button" data-group="emotion" value="exciting">Exciting</button>
+          <button class="option-button" data-group="emotion" value="luxurious">Luxurious</button>
+          <button class="option-button" data-group="emotion" value="playful">Playful</button>
+          <button class="option-button" data-group="emotion" value="friendly">Friendly</button>
+          <button class="option-button" data-group="emotion" value="modern">Modern</button>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="question-3">
+        <h2>Which industries best describe your brand?</h2>
+        <div class="button-grid">
+          <button class="option-button" data-group="industry" value="tech">Tech</button>
+          <button class="option-button" data-group="industry" value="nature">Nature</button>
+          <button class="option-button" data-group="industry" value="fashion">Fashion</button>
+          <button class="option-button" data-group="industry" value="healthcare">Healthcare</button>
+          <button class="option-button" data-group="industry" value="education">Education</button>
+          <button class="option-button" data-group="industry" value="finance">Finance</button>
+          <button class="option-button" data-group="industry" value="sports">Sports</button>
+          <button class="option-button" data-group="industry" value="entertainment">Entertainment</button>
+          <button class="option-button" data-group="industry" value="travel">Travel</button>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question" id="question-4">
+        <h2>What themes best suit your brand?</h2>
+        <div class="button-grid">
+          <button class="option-button" data-group="theme" value="classic">Classic</button>
+          <button class="option-button" data-group="theme" value="modern">Modern</button>
+          <button class="option-button" data-group="theme" value="minimalist">Minimalist</button>
+          <button class="option-button" data-group="theme" value="vintage">Vintage</button>
+          <button class="option-button" data-group="theme" value="artistic">Artistic</button>
+          <button class="option-button" data-group="theme" value="industrial">Industrial</button>
+          <button class="option-button" data-group="theme" value="creative">Creative</button>
+          <button class="option-button" data-group="theme" value="luxury">Luxury</button>
+          <button class="option-button" data-group="theme" value="vibrant">Vibrant</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button id="prev-button" class="nav-button" disabled>Previous</button>
+      <button id="next-button" class="nav-button">Next</button>
+    </div>
+
+    <button id="generate-button" style="display: none;">Generate Colors</button>
+    <button id="reset-button">Reset</button>
+    <p> Click on the colors to copy the Hex Code </p>
+
+    <div class="palette" id="palette"></div>
+  </div>
+  <script src="papp.js"></script>
+</body>
+</html>
