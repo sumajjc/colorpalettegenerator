@@ -1,6 +1,4 @@
 
-Here's how you can craft your README based on what you shared:
-
 Color Palette Generator
 Hey there! 👋
 
